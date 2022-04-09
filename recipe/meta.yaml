@@ -1,5 +1,5 @@
 {% set name = "typepigeon" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typepigeon-{{ version }}.tar.gz
-  sha256: c6b56b4a415f0c58bc79cdfd5f346e5732a9c05323e625f089b18b398057657e
+  sha256: f4a64a606d3a107fadfb322448e4c243b8f9924bc81c0df50681def31050cc1f
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
     - setuptools >=41.2
   run:
+    - importlib-metadata
     - pyproj
     - python >=3.6
     - python-dateutil
