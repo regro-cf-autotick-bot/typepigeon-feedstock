@@ -1,5 +1,5 @@
 {% set name = "typepigeon" %}
-{% set version = "1.0.13" %}
+{% set version = "1.0.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typepigeon-{{ version }}.tar.gz
-  sha256: f4a64a606d3a107fadfb322448e4c243b8f9924bc81c0df50681def31050cc1f
+  sha256: 8385dfee5a6f4dccebfe1355f40569c10233a57948b3463234b46cf5c792f021
 
 build:
   noarch: python
@@ -18,10 +18,9 @@ build:
 
 requirements:
   host:
-    - dunamai
     - pip
+    - poetry
     - python >=3.6
-    - setuptools >=41.2
   run:
     - importlib-metadata
     - pyproj
