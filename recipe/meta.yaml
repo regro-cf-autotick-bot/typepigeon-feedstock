@@ -1,5 +1,5 @@
 {% set name = "typepigeon" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typepigeon-{{ version }}.tar.gz
-  sha256: 8dc53ab0be381089f9294d4a958e8760f2c8c6e074ba0f6bec28c443540e03bb
+  sha256: 0f23bf8587a5288984bd15650dc22bf5d76125b7e6f0035069ceb46a082d7c0f
 
 build:
   noarch: python
